@@ -105,7 +105,7 @@ app.post("/listaUsuarios", parseUrlencoded, function(request, response) {
 });
 	
 //realizamos la conexion a la BBDD
-	mongoose.connect("mongodb://localhost/chat", function(error_basedatos) {
+	mongoose.connect("mongodb://usuarioweb:dsmchat@ds133340.mlab.com:33340/chat", function(error_basedatos) {
 
 		if(!error_basedatos) {
 

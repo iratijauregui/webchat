@@ -1,24 +1,27 @@
 {
-  "name": "node2",
+  "name": "webchat",
   "version": "1.0.0",
-  "main": "server1.js",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "express": "^4.14.1",
-    "pug": "^2.0.0-beta11"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.9.5",
+    "socket.io": "^1.7.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"error\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iratijauregui/webchat.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/iratijauregui/webchat/issues"
   },
-  "homepage": "https://github.com/iratijauregui/webchat#readme",
-  "description": ""
+  "homepage": "https://github.com/iratijauregui/webchat#readme"
 }
