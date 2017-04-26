@@ -12,5 +12,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iratijauregui/webchat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iratijauregui/webchat/issues"
+  },
+  "homepage": "https://github.com/iratijauregui/webchat#readme",
   "description": ""
 }
