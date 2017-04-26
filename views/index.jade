@@ -1,0 +1,37 @@
+html
+  head
+    title Web Chat: sala de chat
+    meta(charset='utf-8')
+    script(src='socket.io/socket.io.js')
+    script(src='/js/jquery.min.js ')
+    script(src='/js/bootstrap.min.js ')
+    script(src='/js/main.js')
+  body
+    .container
+      form#datoUsuario.form-signin(novalidate='novalidate')
+        h2.form-signin-heading Welcome to WebChat!
+        label.sr-only(for='inputName') Chat Name
+        input#inputName.form-control(type='name', name='user', placeholder='Chat Name', required='', autofocus='')
+        button#submitButton.btn.btn-lg.btn-primary.btn-block(type='submit') Sign In
+    #chatContainer
+      #chatRoom.container
+        #disconnectDiv.row
+          .col-xs-6.col-sm-12
+            button#disconnectButton.btn.btn-lg.btn-danger.btn-block.chatButtons
+              .glyphicon.glyphicon-off
+          .col-xs-6
+            button.navbar-toggle.collapsed.chatButtons.btn.btn-lg.btn-warning.btn-block(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              .glyphicon.glyphicon-user
+        .row
+          .col-sm-1.col-md-2.visible-sm.visible-md.visible-lg
+          .col-xs-12.col-sm-3
+            #listaCont
+              ul#listaUsers.collapse.navbar-collapse.list-unstyled User List
+          #chatDiv.col-xs-12.col-sm-8.col-sm-pull-2.col-md-4.col-md-pull-1
+            .chat
+              .chat-title.text-center WebChat
+              #mensajesContain.messages
+                .messages-content
+                  ul#mensajes.list-unstyled
+      #chatBG
+    button#eeeh.btn.btn-lg.btn-primary.btn-block(type='submit') Sign In

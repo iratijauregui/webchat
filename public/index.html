@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Web Chat: sala de chat</title>
+    <meta charset="utf-8"/>
+	<link href="estilo.css" media="all" rel="stylesheet"/>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+	<script src="/js/main.js"></script>
+	<link href="emotic/jquery.cssemoticons.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="emotic/jquery.js" type="text/javascript"></script>
+	<script src="emotic/jquery.cssemoticons.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+    <div class="container" id='contenedorLogin'>
+        <form id="logUsuario" novalidate="novalidate" action ='javascript:void(0)' class="form-signin" method ='post'>
+          <h2>Bienvenido a WebChat!</h2>
+          <label for="nombreUsuario" class="sr-only">Nombre de usuario</label>
+          <input id="nombreUsuario" type="name" name='usuario' placeholder="Chat Name" required="" autofocus="" class="form-control"/>
+		  <input id ='boton' type ='submit' value='Entrar'/>
+		</form>
+     </div>
+	 
+	 <div class="container" id="holaUsuario">
+		<h2>Hola, </h2>
+	 </div>
+	 <div id="desconexion">
+			<input id='desconectarBoton' type ='submit' value='Desconectar'/>
+	</div>
+	 
+	
+	<div >
+		<div id="logUsuarios">
+			<ul id="prueba" class="collapse navbar-collapse list-unstyled">USUARIOS CONECTADOS:</ul>
+		</div>
+		<div class="chat">
+				  <div class="tituloChat text-center">Sala: 
+					  <div class="usuariosConectados">
+					  </div>
+					  <div class='usuariosEscribiendo'>
+						<div class='lista-usuarios'></div>
+						<span id="escribiendo-mensaje">escribiendo...</span>
+					  </div>
+				  </div>
+				  
+				  <div id="contenedorMensajes" class="messages">
+					<div class="messages-content">
+					  <ul id="listaMensajes" class="list-unstyled"></ul>
+					</div>
+				  </div>
+				  <div class="mensajes">
+					<form  id="mensajes" novalidate="novalidate" action ='javascript:void(0)' class="form-signin" method ='post'>
+					  <input id="escribe" type="text" name='usuario' placeholder="Escribe tu mensaje" required="" autofocus="" value ='' class="panel panel-default"/>
+					  <input id='mandarMensaje' type ='submit' value='Enviar'/>
+					</form>
+					<div id="emoticonos" style="display:none;" >
+					
+					</div>
+				  </div>
+		</div>
+	</div>
+
+  </body>
+</html>
+

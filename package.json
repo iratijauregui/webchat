@@ -1,0 +1,16 @@
+{
+  "name": "node2",
+  "version": "1.0.0",
+  "main": "server1.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"error\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
